@@ -529,7 +529,87 @@ position: relative;
   line-height: 1.5;
 }
 
-/* end of experience. 
+/* end of experience.
 start of Blog
 if using as portfolio template
 skip blog and create contact form for hire */
+
+#blog{
+  padding: 100px 15px;
+  background: #f9fafc;
+}
+#blog .title h1{
+  font-size: 4rem;
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 80px;
+  text-transform: uppercase;
+}
+#blog .blog-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 588px;
+  grid-gap: 15px;
+  overflow: hidden;
+}
+#blog .blog-container .post{
+  position: relative;
+  transition: all .4s ease-in-out;
+  cursor: pointer;
+}
+#blog .blog-container .post .post-img{
+  height:100%;
+  width:100%;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+  background-size: contain !important;
+  background-size: cover !important;
+  background-color: rgba(255,53,53, .8) !important;
+}
+#blog .blog-container .post .details{
+  background: white;
+  padding: 35px;
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  transform: translate3d(0, -200px, 0);
+  transition: all .4s ease-in-out;
+}
+#blog .blog-container .post .details h4{
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 1.8rem;
+  color:#13171a;
+}
+#blog .blog-container .post .details p{
+color: #919191;
+font-size: 1rem;
+font-weight: 400;
+line-height: 1.5;
+margin-bottom: 1.8rem;
+}
+#blog .blog-container .post .more{
+  position: absolute;
+  z-index: 3;
+  width: 100%;
+  bottom:0;
+  background: white;
+  padding: 0 35px 35px;
+}
+#blog .blog-container .post .more .button{
+  font-size: 1.3rem;
+  color:#13171a;
+  font-weight: 700;
+  letter-spacing: 2px;
+  line-height: 1.5;
+  display: inline-block;
+  border-bottom: 2px solid #13171a;
+  padding-bottom: 10px;
+}
+
+/* hover effect on post */
+#blog .blog-container .post:hover .details{
+    transform: translate3d(0, -588px, 0);
+}
