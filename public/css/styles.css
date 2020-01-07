@@ -547,8 +547,8 @@ skip blog and create contact form for hire */
 }
 #blog .blog-container{
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 588px;
+  grid-template-columns: 1fr  1fr 1fr;
+  grid-template-rows: 588px 588px;
   grid-gap: 15px;
   overflow: hidden;
 }
@@ -556,15 +556,18 @@ skip blog and create contact form for hire */
   position: relative;
   transition: all .4s ease-in-out;
   cursor: pointer;
+  height: 100%;
+  overflow: hidden;
 }
 #blog .blog-container .post .post-img{
   height:100%;
   width:100%;
-  background-position: center center !important;
-  background-repeat: no-repeat !important;
+  object-fit: contain;
+  /* background-position: center center !important; */
+  /* background-repeat: no-repeat !important;
   background-size: contain !important;
   background-size: cover !important;
-  background-color: rgba(255,53,53, .8) !important;
+  background-color: rgba(255,53,53, .8) !important; */
 }
 #blog .blog-container .post .details{
   background: white;
@@ -596,7 +599,7 @@ margin-bottom: 1.8rem;
   width: 100%;
   bottom:0;
   background: white;
-  padding: 0 35px 35px;
+  padding:35px;
 }
 #blog .blog-container .post .more .button{
   font-size: 1.3rem;
@@ -605,11 +608,19 @@ margin-bottom: 1.8rem;
   letter-spacing: 2px;
   line-height: 1.5;
   display: inline-block;
-  border-bottom: 2px solid #13171a;
+  border-bottom: 2px solid #ff5253;
   padding-bottom: 10px;
+  transition: all .4s ease-in-out .2s;
+  opacity: 0;
+  transform: translate3d(0, 40px, 0);
 }
 
 /* hover effect on post */
 #blog .blog-container .post:hover .details{
     transform: translate3d(0, -588px, 0);
+}
+#blog .blog-container .post:hover .more .button{
+  color:#ff5253;
+  transform: translate3d(0, 0, 0);
+  opacity: 1;
 }
