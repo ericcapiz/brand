@@ -624,3 +624,84 @@ margin-bottom: 1.8rem;
   transform: translate3d(0, 0, 0);
   opacity: 1;
 }
+
+/* testimonial section
+wont use in actual portfolio/instead skip to footer */
+
+#testimonial{
+  padding: 80px 15px;
+}
+#testimonial .title{
+  position: relative;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+#testimonial .title h1 {
+  position: relative;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #16171b;
+  z-index: 1;
+}
+
+#testimonial .title .psquare {
+  background: #ffeded;
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  top: 23px;
+}
+#testimonial .testimonial-container{
+  display: grid;
+  grid-template-columns: 15% 70% 15%;
+  grid-gap: 15px;
+}
+#testimonial .testimonial-container .test-center{
+  background: white;
+  padding: 60px;
+  background: rgba(255, 255, 255, 1);
+  -webkit-box-shadow: 0px 40px 74px 24px rgba(0, 0, 0, 0.08);
+  -moz-box-shadow: 0px 40px 74px 24px rgba(0, 0, 0, 0.08);
+  box-shadow: 0px 40px 74px 24px rgba(0, 0, 0, 0.08);
+}
+#testimonial .testimonial-container .test-center .header{
+  display: flex;
+}
+#testimonial .testimonial-container .test-center .header .user-img img{
+  width:150px;
+  display: flex;
+}
+#testimonial .testimonial-container .test-center .header img{
+  width:100%;
+}
+#testimonial .testimonial-container .test-center .header .info{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-left: 40px;
+}
+#testimonial .testimonial-container .test-center .header .info h4{
+  color: #13161d;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 1rem;
+}
+#testimonial .testimonial-container .test-center .header .info span{
+  color: #929294;
+  font-weight: 400;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+}
+#testimonial .testimonial-container .test-center p{
+  color: #929294;
+  font-weight: 400;
+  line-height: 1.7;
+  font-size: 1.2rem;
+  padding-top: 40px;
+}
