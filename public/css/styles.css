@@ -62,6 +62,88 @@ table {
   margin: 0 auto;
 }
 
+header{
+  display: flex;
+  padding: 20px;
+  justify-content: space-between;
+}
+header .logo{
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color:white;
+  display: flex;
+}
+header .logo .name{
+  background: black;
+  padding: 15px 20px;
+  text-decoration: none;
+  cursor: pointer;
+}
+header .logo:hover{
+  color: #52b7ff;
+}
+header .header-menu{
+  font-size: 1rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  display:flex;
+  justify-content: center;
+  align-items: center
+}
+header .header-menu a{
+  font-size: 1rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
+  padding: 0 10px;
+}
+header .header-menu a:hover{
+  font-weight: 900;
+  font-size: 1.3rem;
+  color: #52b7ff;
+}
+header .menu-btn{
+  font-weight: 700;
+  color: #52b7ff;
+  font-size: 1.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  display: none;
+}
+.mobile-menu{
+  display: none;
+  background: white;
+  flex-direction: column;
+  padding: 40px 0;
+  position: absolute;
+  top:0;
+  height: 100vh;
+  width:50%;
+  z-index: 10;
+  transform: translate3d(-100%, 0, 0);
+  transition: all .4s ease-in-out;
+  -webkit-box-shadow: 2px 0px 78px -15px rgba(0,0,0,0.75);
+  -moz-box-shadow: 2px 0px 78px -15px rgba(0,0,0,0.75);
+  box-shadow: 2px 0px 78px -15px rgba(0,0,0,0.75);
+}
+.mobile-menu.active{
+  transform: translate3d(0, 0, 0);
+}
+.mobile-menu a{
+  padding: 15px;
+  text-decoration: none;
+  color:black;
+}
+.mobile-menu a:hover{
+  text-decoration: none;
+  background-color:#52b7ff;
+  color: white;
+  font-size: 1.2rem;
+}
+
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,600i,700&display=swap');
 
 #top {}
@@ -584,11 +666,6 @@ skip blog and create contact form for hire */
   height: 100%;
   width: 100%;
   object-fit: contain;
-  /* background-position: center center !important; */
-  /* background-repeat: no-repeat !important;
-  background-size: contain !important;
-  background-size: cover !important;
-  background-color: rgba(255,53,53, .8) !important; */
 }
 
 #blog .blog-container .post .details {
@@ -956,14 +1033,25 @@ footer h6 {
 
 /* PHONES */
 @media only screen and (max-width: 767px) {
+  header .logo{
+    font-size: 1.3rem;
+  }
+  header .header-menu{
+    display: none;
+  }
+  header .menu-btn{
+    display: flex;
+    cursor: pointer;
+  }
+  .mobile-menu{
+    display: flex;
+  }
   #top .container {
     padding: 0 0 80px;
   }
-
   #top .info .bluesquare {
     display: none;
   }
-
   #top .img .background_img {
     height: 100vh;
   }
