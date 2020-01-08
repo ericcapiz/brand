@@ -85,8 +85,8 @@ table {
   height: 500px;
   position: absolute;
   z-index: 0;
-  top: -70%;
-  left: -50%;
+  top: -150px;
+  left: -140px;
 }
 
 #top .info h1 {
@@ -277,24 +277,25 @@ table {
   box-shadow: 0px 40px 74px 24px rgba(0, 0, 0, 0.08);
 }
 
-#portfolio-section .portfolio-container .box .image .hover-bg{
+#portfolio-section .portfolio-container .box .image .hover-bg {
   padding: 10px 20px;
-  background: rgba(255,255,255, 0);
+  background: rgba(255, 255, 255, 0);
   transition: all .4s ease-in-out;
-  height: 100%;
-  width:100%;
-}
-
-#portfolio-section .portfolio-container .box:hover .image .hover-bg{
-  padding: 10px 20px;
-  background: rgba(255,53,53, .8);
-}
-#portfolio-section .portfolio-container .box .image .hover-bg .title{
   height: 100%;
   width: 100%;
 }
 
-#portfolio-section .portfolio-container .box .image .hover-bg .title .text{
+#portfolio-section .portfolio-container .box:hover .image .hover-bg {
+  padding: 10px 20px;
+  background: rgba(255, 53, 53, .8);
+}
+
+#portfolio-section .portfolio-container .box .image .hover-bg .title {
+  height: 100%;
+  width: 100%;
+}
+
+#portfolio-section .portfolio-container .box .image .hover-bg .title .text {
   background: #52b8ff;
   border-radius: 5px;
   padding: 10px 20px;
@@ -302,7 +303,8 @@ table {
   transition: all .3s ease-in-out;
   opacity: 0;
 }
-#portfolio-section .portfolio-container .box:hover .image .hover-bg .title .text{
+
+#portfolio-section .portfolio-container .box:hover .image .hover-bg .title .text {
   background: #52b8ff;
   border-radius: 5px;
   padding: 10px 20px;
@@ -311,7 +313,6 @@ table {
 }
 
 /* images for boxes */
-
 #portfolio-section .portfolio-container .box.image1 {
   grid-column: 1 / 3;
   grid-row: 1 / 2;
@@ -325,6 +326,7 @@ table {
   background-position: center center;
   background-repeat: no-repeat;
 }
+
 #portfolio-section .portfolio-container .box.image2 {
   grid-column: 3 / 4;
   grid-row: 1 / 3;
@@ -334,8 +336,8 @@ table {
   height: 100%;
   width: 100%;
   background: url('https://careerswithstem.com.au/wp-content/uploads/2018/07/web-development-programming-resized.jpg');
-  background-size:cover;
-  background-position:center center;
+  background-size: cover;
+  background-position: center center;
   background-repeat: no-repeat;
 }
 
@@ -348,10 +350,11 @@ table {
   height: 100%;
   width: 100%;
   background: url('https://us.123rf.com/450wm/rawpixel/rawpixel1608/rawpixel160848609/61607926-html-web-development-code-design-concept.jpg?ver=6');
-  background-size:cover;
-  background-position:center center;
+  background-size: cover;
+  background-position: center center;
   background-repeat: no-repeat;
 }
+
 #portfolio-section .portfolio-container .box.image4 {
   grid-column: 2 / 3;
   grid-row: 2 / 3;
@@ -361,10 +364,11 @@ table {
   height: 100%;
   width: 100%;
   background: url('https://previews.123rf.com/images/alexandersikov/alexandersikov1709/alexandersikov170900252/86905307-php-programming-language-web-development-coding-concept-.jpg');
-  background-size:cover;
-  background-position:center center;
+  background-size: cover;
+  background-position: center center;
   background-repeat: no-repeat;
 }
+
 #portfolio-section .portfolio-container .box.image5 {
   grid-column: 1 / 2;
   grid-row: 3 / 5;
@@ -374,10 +378,11 @@ table {
   height: 100%;
   width: 100%;
   background: url('https://previews.123rf.com/images/maxkabakov/maxkabakov1310/maxkabakov131000296/22571450-seo-web-development-concept-pixelated-words-web-analytics-on-digital-3d-render.jpg');
-  background-size:cover;
-  background-position:center center;
+  background-size: cover;
+  background-position: center center;
   background-repeat: no-repeat;
 }
+
 #portfolio-section .portfolio-container .box.image6 {
   grid-column: 2 / 3;
   grid-row: 3 / 5;
@@ -387,10 +392,11 @@ table {
   height: 100%;
   width: 100%;
   background: url('https://www.xicom.biz/blog/wp-content/uploads/2019/05/php-framework-1.jpg');
-  background-size:cover;
-  background-position:center center;
+  background-size: cover;
+  background-position: center center;
   background-repeat: no-repeat;
 }
+
 #portfolio-section .portfolio-container .box.image7 {
   grid-column: 3 / 4;
   grid-row: 3 / 5;
@@ -400,16 +406,17 @@ table {
   height: 100%;
   width: 100%;
   background: url('https://www.s-fx.com/wp-content/uploads/2019/06/web-design.jpg');
-  background-size:cover;
-  background-position:center center;
+  background-size: cover;
+  background-position: center center;
   background-repeat: no-repeat;
 }
 
 /* EXPERIENCE SECTION */
-#experience-section{
+#experience-section {
   padding: 80px 15px;
 }
-#experience-section .large-title{
+
+#experience-section .large-title {
   color: #c6e4ff;
   font-weight: 900;
   font-size: 4.5rem;
@@ -417,19 +424,21 @@ table {
   text-transform: uppercase;
 }
 
-#experience-section .experience-container{
+#experience-section .experience-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 20px;
 }
-#experience-section .experience-container .large-icons .square{
+
+#experience-section .experience-container .large-icons .square {
   border: 30px solid #52b8ff;
   padding: 5px;
   display: inline-block;
   position: relative;
   top: -100px;
 }
-#experience-section .experience-container .large-icons .square .blue-box{
+
+#experience-section .experience-container .large-icons .square .blue-box {
   border: 20px solid #52b8ff;
   height: 150px;
   width: 150px;
@@ -444,8 +453,10 @@ table {
   font-size: 1.1rem;
   letter-spacing: 3px;
 }
-#experience-section .experience-container .large-icons .circle{
-  border: 30px solid #ffc853;;
+
+#experience-section .experience-container .large-icons .circle {
+  border: 30px solid #ffc853;
+  ;
   padding: 5px;
   display: inline-block;
   border-radius: 50%;
@@ -453,30 +464,32 @@ table {
   left: 50px;
   top: 95px;
 }
-#experience-section .experience-container .large-icons .circle-box{
+
+#experience-section .experience-container .large-icons .circle-box {
   color: #ffc853;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-  width:150px;
-  height:150px;
+  width: 150px;
+  height: 150px;
   font-weight: 600;
   font-size: 1.1rem;
   letter-spacing: 3px;
   text-transform: uppercase;
   font-weight: 600;
 }
-#experience-section .experience-container .large-icons .triangle{
-width: 0;
-height: 0;
-border-style: solid;
-border-width: 0 150px 230px 150px;
-border-color: transparent transparent #ff5253 transparent;
-position: relative;
+
+#experience-section .experience-container .large-icons .triangle {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 150px 230px 150px;
+  border-color: transparent transparent #ff5253 transparent;
+  position: relative;
 }
 
-#experience-section .experience-container .large-icons .triangle .triangle-box{
+#experience-section .experience-container .large-icons .triangle .triangle-box {
   width: 0;
   height: 0;
   border-style: solid;
@@ -484,34 +497,38 @@ position: relative;
   border-color: transparent transparent #ffffff transparent;
   position: absolute;
   left: -94px;
-  top:49px;
+  top: 49px;
   font-weight: 600;
   font-size: 1.1rem;
   letter-spacing: 3px;
   text-transform: uppercase;
   color: #ff5253;
 }
-#experience-section .experience-container .large-icons .triangle .triangle-box .text{
+
+#experience-section .experience-container .large-icons .triangle .triangle-box .text {
   position: relative;
   top: 90px;
   left: -30px;
-
 }
-#experience-section .experience-container .info{
+
+#experience-section .experience-container .info {
   padding-top: 80px;
 }
-#experience-section .experience-container .info .info-box{
-  padding:15px;
+
+#experience-section .experience-container .info .info-box {
+  padding: 15px;
 }
-#experience-section .experience-container .info .info-box h4{
-  color:#16171b;
+
+#experience-section .experience-container .info .info-box h4 {
+  color: #16171b;
   font-size: 1.2rem;
   font-weight: 900;
   text-transform: uppercase;
   letter-spacing: 5px;
 }
-#experience-section .experience-container .info .info-box .date{
-  color:#52b7ff;
+
+#experience-section .experience-container .info .info-box .date {
+  color: #52b7ff;
   font-size: .9rem;
   font-weight: 600;
   text-transform: capitalize;
@@ -519,8 +536,9 @@ position: relative;
   padding: 15px 0;
   display: block;
 }
-#experience-section .experience-container .info .info-box p{
-  color:#b2b2b4;
+
+#experience-section .experience-container .info .info-box p {
+  color: #b2b2b4;
   font-size: .9rem;
   font-weight: 400;
   text-transform: capitalize;
@@ -533,35 +551,38 @@ position: relative;
 start of Blog
 if using as portfolio template
 skip blog and create contact form for hire */
-
-#blog{
+#blog {
   padding: 100px 15px;
   background: #f9fafc;
 }
-#blog .title h1{
+
+#blog .title h1 {
   font-size: 4rem;
   text-align: center;
   font-weight: 700;
   margin-bottom: 80px;
   text-transform: uppercase;
 }
-#blog .blog-container{
+
+#blog .blog-container {
   display: grid;
-  grid-template-columns: 1fr  1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 588px 588px;
   grid-gap: 15px;
   overflow: hidden;
 }
-#blog .blog-container .post{
+
+#blog .blog-container .post {
   position: relative;
   transition: all .4s ease-in-out;
   cursor: pointer;
   height: 100%;
   overflow: hidden;
 }
-#blog .blog-container .post .post-img{
-  height:100%;
-  width:100%;
+
+#blog .blog-container .post .post-img {
+  height: 100%;
+  width: 100%;
   object-fit: contain;
   /* background-position: center center !important; */
   /* background-repeat: no-repeat !important;
@@ -569,7 +590,8 @@ skip blog and create contact form for hire */
   background-size: cover !important;
   background-color: rgba(255,53,53, .8) !important; */
 }
-#blog .blog-container .post .details{
+
+#blog .blog-container .post .details {
   background: white;
   padding: 35px;
   position: absolute;
@@ -578,32 +600,36 @@ skip blog and create contact form for hire */
   transform: translate3d(0, -200px, 0);
   transition: all .4s ease-in-out;
 }
-#blog .blog-container .post .details h4{
+
+#blog .blog-container .post .details h4 {
   font-size: 1.1rem;
   text-transform: uppercase;
   font-weight: 700;
   letter-spacing: 2px;
   margin-bottom: 1.8rem;
-  color:#13171a;
+  color: #13171a;
 }
-#blog .blog-container .post .details p{
-color: #919191;
-font-size: 1rem;
-font-weight: 400;
-line-height: 1.5;
-margin-bottom: 1.8rem;
+
+#blog .blog-container .post .details p {
+  color: #919191;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-bottom: 1.8rem;
 }
-#blog .blog-container .post .more{
+
+#blog .blog-container .post .more {
   position: absolute;
   z-index: 3;
   width: 100%;
-  bottom:0;
+  bottom: 0;
   background: white;
-  padding:35px;
+  padding: 35px;
 }
-#blog .blog-container .post .more .button{
+
+#blog .blog-container .post .more .button {
   font-size: 1.3rem;
-  color:#13171a;
+  color: #13171a;
   font-weight: 700;
   letter-spacing: 2px;
   line-height: 1.5;
@@ -616,22 +642,23 @@ margin-bottom: 1.8rem;
 }
 
 /* hover effect on post */
-#blog .blog-container .post:hover .details{
-    transform: translate3d(0, -588px, 0);
+#blog .blog-container .post:hover .details {
+  transform: translate3d(0, -588px, 0);
 }
-#blog .blog-container .post:hover .more .button{
-  color:#ff5253;
+
+#blog .blog-container .post:hover .more .button {
+  color: #ff5253;
   transform: translate3d(0, 0, 0);
   opacity: 1;
 }
 
 /* testimonial section
 wont use in actual portfolio/instead skip to footer */
-
-#testimonial{
+#testimonial {
   padding: 80px 15px;
 }
-#testimonial .title{
+
+#testimonial .title {
   position: relative;
   width: 200px;
   height: 200px;
@@ -640,6 +667,7 @@ wont use in actual portfolio/instead skip to footer */
   align-items: center;
   margin: 0 auto;
 }
+
 #testimonial .title h1 {
   position: relative;
   font-size: 2.5rem;
@@ -656,13 +684,15 @@ wont use in actual portfolio/instead skip to footer */
   position: absolute;
   top: 23px;
 }
-#testimonial .testimonial-container{
+
+#testimonial .testimonial-container {
   display: grid;
   grid-template-columns: 15% 70% 15%;
   grid-gap: 15px;
   padding: 100px 0;
 }
-#testimonial .testimonial-container .test-center{
+
+#testimonial .testimonial-container .test-center {
   background: white;
   padding: 60px;
   background: rgba(255, 255, 255, 1);
@@ -670,69 +700,81 @@ wont use in actual portfolio/instead skip to footer */
   -moz-box-shadow: 0px 40px 74px 24px rgba(0, 0, 0, 0.08);
   box-shadow: 0px 40px 74px 24px rgba(0, 0, 0, 0.08);
 }
-#testimonial .testimonial-container .test-center .header{
+
+#testimonial .testimonial-container .test-center .header {
   display: flex;
 }
-#testimonial .testimonial-container .test-center .header .user-img img{
-  width:150px;
+
+#testimonial .testimonial-container .test-center .header .user-img img {
+  width: 150px;
   display: flex;
 }
-#testimonial .testimonial-container .test-center .header img{
-  width:100%;
+
+#testimonial .testimonial-container .test-center .header img {
+  width: 100%;
 }
-#testimonial .testimonial-container .test-center .header .info{
+
+#testimonial .testimonial-container .test-center .header .info {
   display: flex;
   justify-content: center;
   flex-direction: column;
   padding-left: 40px;
 }
-#testimonial .testimonial-container .test-center .header .info h4{
+
+#testimonial .testimonial-container .test-center .header .info h4 {
   color: #13161d;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 2px;
   margin-bottom: 1rem;
 }
-#testimonial .testimonial-container .test-center .header .info span{
+
+#testimonial .testimonial-container .test-center .header .info span {
   color: #929294;
   font-weight: 400;
   text-transform: capitalize;
   letter-spacing: 2px;
 }
-#testimonial .testimonial-container .test-center p{
+
+#testimonial .testimonial-container .test-center p {
   color: #929294;
   font-weight: 400;
   line-height: 1.7;
   font-size: 1.2rem;
   padding-top: 40px;
 }
-#testimonial .testimonial-container .test-sides{
+
+#testimonial .testimonial-container .test-sides {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-#testimonial .testimonial-container .test-sides .person-img{
+
+#testimonial .testimonial-container .test-sides .person-img {
   background-position: center center !important;
   background-repeat: no-repeat !important;
   background-size: cover !important;
   background-color: # !important;
   height: 80%;
-  width:100%;
+  width: 100%;
 }
-#testimonial .testimonial-container .test-sides .person-img .hover-bg{
+
+#testimonial .testimonial-container .test-sides .person-img .hover-bg {
   background: rgba(255, 53, 53, 0);
   height: 100%;
-  width:100%;
+  width: 100%;
   transition: all .2s ease-in-out;
   cursor: pointer;
 }
-#testimonial .testimonial-container .test-sides:hover .person-img .hover-bg{
+
+#testimonial .testimonial-container .test-sides:hover .person-img .hover-bg {
   background: rgba(255, 53, 53, .8);
   height: 100%;
-  width:100%;
+  width: 100%;
 }
-#testimonial .testimonial-container .test-sides .person-img .hover-bg .name{
-  color:white;
+
+#testimonial .testimonial-container .test-sides .person-img .hover-bg .name {
+  color: white;
   font-size: 2rem;
   font-weight: 700;
   display: flex;
@@ -740,12 +782,13 @@ wont use in actual portfolio/instead skip to footer */
   align-items: center;
   height: 100%;
   width: 100%;
-  transform: translate3d(0, 50px,0);
+  transform: translate3d(0, 50px, 0);
   transition: all .2s ease-in-out .2s;
   opacity: 0;
 }
-#testimonial .testimonial-container .test-sides:hover .person-img .hover-bg .name{
-  color:white;
+
+#testimonial .testimonial-container .test-sides:hover .person-img .hover-bg .name {
+  color: white;
   font-size: 2rem;
   font-weight: 700;
   display: flex;
@@ -753,18 +796,18 @@ wont use in actual portfolio/instead skip to footer */
   align-items: center;
   height: 100%;
   width: 100%;
-  transform: translate3d(0, 0,0);
+  transform: translate3d(0, 0, 0);
   transition: all .2s ease-in-out .2s;
   opacity: 1;
 }
 
 /* FOOTER */
-
-footer{
+footer {
   background: #f9fafc;
   padding: 50px 15px;
 }
-footer .social-container{
+
+footer .social-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 35px;
@@ -774,27 +817,30 @@ footer .social-container{
   margin: 0 auto;
 }
 
-footer .social-container a{
+footer .social-container a {
   font-size: 3rem;
-  color:#8e8f91;
+  color: #8e8f91;
   text-decoration: none;
   transition: all .4s ease-in-out;
   display: inline-block;
-  padding:10px;
+  padding: 10px;
 }
-footer .social-container a:hover{
+
+footer .social-container a:hover {
   cursor: pointer;
-  color:#52b7ff;
+  color: #52b7ff;
   transition: all .4s ease-in-out;
 }
-footer h5{
+
+footer h5 {
   text-align: center;
-  margin:20px 0;
+  margin: 20px 0;
   font-size: 1rem;
-  color:black;
+  color: black;
   text-transform: uppercase;
 }
-footer h6{
+
+footer h6 {
   text-align: center;
   font-size: .8rem;
   text-transform: capitalize;
@@ -802,107 +848,222 @@ footer h6{
 }
 
 /* RESPONSIVE */
-
 /* TABLETS */
-
-@media only screen and (max-width: 960px){
-  .container{ width:100% }
-  #top .container{
-    padding:0 0 80px;
+@media only screen and (max-width: 960px) {
+  .container {
+    width: 100%
   }
-  #top .img .backgroung_img{
+
+  #top .container {
+    padding: 0 0 80px;
+  }
+
+  #top .img .backgroung_img {
     height: 100vh;
   }
-  #services .services-container{
+
+  #services .services-container {
     grid-template-columns: 100%;
   }
-  #services .services-container .box{
+
+  #services .services-container .box {
     background: rgba(255, 255, 255, 1);
     -webkit-box-shadow: 0px 40px 74px 24px rgba(0, 0, 0, 0.08);
     -moz-box-shadow: 0px 40px 74px 24px rgba(0, 0, 0, 0.08);
     box-shadow: 0px 40px 74px 24px rgba(0, 0, 0, 0.08);
   }
+
   #portfolio-section .portfolio-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 150px 150px 150px 150px 150px 150px 150px 150px;
     grid-gap: 10px;
   }
-  #portfolio-section .portfolio-container .box.image1{
+
+  #portfolio-section .portfolio-container .box.image1 {
     grid-column: 1 / 2;
     grid-row: 1 / 3;
   }
-  #portfolio-section .portfolio-container .box.image2{
+
+  #portfolio-section .portfolio-container .box.image2 {
     grid-column: 2 / 3;
     grid-row: 1 / 3;
   }
-  #portfolio-section .portfolio-container .box.image3{
+
+  #portfolio-section .portfolio-container .box.image3 {
     grid-column: 1 / 2;
     grid-row: 3 / 5;
   }
-  #portfolio-section .portfolio-container .box.image4{
+
+  #portfolio-section .portfolio-container .box.image4 {
     grid-column: 2 / 3;
     grid-row: 3 / 5;
   }
-  #portfolio-section .portfolio-container .box.image5{
+
+  #portfolio-section .portfolio-container .box.image5 {
     grid-column: 1 / 2;
     grid-row: 5 / 7;
   }
-  #portfolio-section .portfolio-container .box.image6{
+
+  #portfolio-section .portfolio-container .box.image6 {
     grid-column: 2 / 3;
     grid-row: 5 / 7;
   }
-  #portfolio-section .portfolio-container .box.image7{
+
+  #portfolio-section .portfolio-container .box.image7 {
     grid-column: 1 / 4;
     grid-row: 7 / 9;
   }
 
+  #experience-section .large-title {
+    font-size: 3rem;
+    left: 0;
+  }
+
+  #experience-section .experience-container .large-icons .square {
+    border: 30px solid #52b8ff;
+    padding: 5px;
+    display: inline-block;
+    position: relative;
+    top: 82px;
+    left: 48px;
+  }
+
+  #experience-section .experience-container .large-icons .circle {
+    border: 30px solid #ffc853;
+    ;
+    padding: 5px;
+    display: inline-block;
+    border-radius: 50%;
+    position: relative;
+    left: 50px;
+    top: 65px;
+  }
+  #blog .blog-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 588px 588px 588px;
+    grid-gap: 15px;
+    overflow: hidden;
+  }
+  #testimonial .testimonial-container {
+    display: grid;
+    grid-template-columns: 15% 70% 15%;
+    grid-gap: 0;
+    padding: 100px 0;
+  }
 }
 
 /* PHONES */
-
-@media only screen and (max-width: 767px){
-  #top .container{
-    padding:0 0 80px;
+@media only screen and (max-width: 767px) {
+  #top .container {
+    padding: 0 0 80px;
   }
-  #top .info .bluesquare{
+
+  #top .info .bluesquare {
     display: none;
   }
-  #top .img .background_img{
+
+  #top .img .background_img {
     height: 100vh;
   }
+
   #portfolio-section .portfolio-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 150px 150px 150px 150px 150px 150px 150px;
     grid-gap: 10px;
   }
-  #portfolio-section .portfolio-container .box.image1{
+
+  #portfolio-section .portfolio-container .box.image1 {
     grid-column: 1 / 4;
     grid-row: 1 / 2;
   }
-  #portfolio-section .portfolio-container .box.image2{
+
+  #portfolio-section .portfolio-container .box.image2 {
     grid-column: 1 / 4;
     grid-row: 2 / 3;
   }
-  #portfolio-section .portfolio-container .box.image3{
+
+  #portfolio-section .portfolio-container .box.image3 {
     grid-column: 1 / 4;
     grid-row: 3 / 4;
   }
-  #portfolio-section .portfolio-container .box.image4{
+
+  #portfolio-section .portfolio-container .box.image4 {
     grid-column: 1 / 4;
     grid-row: 4 / 5;
   }
-  #portfolio-section .portfolio-container .box.image5{
+
+  #portfolio-section .portfolio-container .box.image5 {
     grid-column: 1 / 4;
     grid-row: 5 / 6;
   }
-  #portfolio-section .portfolio-container .box.image6{
+
+  #portfolio-section .portfolio-container .box.image6 {
     grid-column: 1 / 4;
     grid-row: 6 / 7;
   }
-  #portfolio-section .portfolio-container .box.image7{
+
+  #portfolio-section .portfolio-container .box.image7 {
     grid-column: 1 / 4;
     grid-row: 7 / 8;
+  }
+
+  #experience-section .large-title {
+    font-size: 2.5rem;
+    left: 0;
+  }
+
+  #experience-section .experience-container {
+    grid-template-columns: 1fr;
+  }
+
+  #experience-section .experience-container .info .info-box h4 {
+    font-size: .9rem;
+  }
+
+  #experience-section .experience-container .info .info-box .date {
+    font-size: .8rem;
+  }
+
+  #experience-section .experience-container .large-icons {
+    display: none;
+  }
+  #blog .title h1 {
+    font-size: 3rem;
+  }
+  #blog .blog-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 400px 400px 400px 400px 400px 400px;
+    grid-gap: 15px;
+    overflow: hidden;
+  }
+  #blog .blog-container .post:hover .details {
+    transform: translate3d(0, -400px, 0);
+  }
+  #testimonial .testimonial-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100px 1fr;
+    grid-gap: 0;
+    padding: 100px 0;
+  }
+  #testimonial .testimonial-container .test-sides.test-left{
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+  #testimonial .testimonial-container .test-sides.test-right{
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+  }
+  #testimonial .testimonial-container .test-center{
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+    padding: 20px;
+  }
+  #testimonial .testimonial-container .test-center p{
+  font-size: 1rem;
   }
 }
