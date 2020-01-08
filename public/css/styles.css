@@ -660,6 +660,7 @@ wont use in actual portfolio/instead skip to footer */
   display: grid;
   grid-template-columns: 15% 70% 15%;
   grid-gap: 15px;
+  padding: 100px 0;
 }
 #testimonial .testimonial-container .test-center{
   background: white;
@@ -704,4 +705,55 @@ wont use in actual portfolio/instead skip to footer */
   line-height: 1.7;
   font-size: 1.2rem;
   padding-top: 40px;
+}
+#testimonial .testimonial-container .test-sides{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#testimonial .testimonial-container .test-sides .person-img{
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-color: # !important;
+  height: 80%;
+  width:100%;
+}
+#testimonial .testimonial-container .test-sides .person-img .hover-bg{
+  background: rgba(255, 53, 53, 0);
+  height: 100%;
+  width:100%;
+  transition: all .2s ease-in-out;
+  cursor: pointer;
+}
+#testimonial .testimonial-container .test-sides:hover .person-img .hover-bg{
+  background: rgba(255, 53, 53, .8);
+  height: 100%;
+  width:100%;
+}
+#testimonial .testimonial-container .test-sides .person-img .hover-bg .name{
+  color:white;
+  font-size: 2rem;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  transform: translate3d(0, 50px,0);
+  transition: all .2s ease-in-out .2s;
+  opacity: 0;
+}
+#testimonial .testimonial-container .test-sides:hover .person-img .hover-bg .name{
+  color:white;
+  font-size: 2rem;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  transform: translate3d(0, 0,0);
+  transition: all .2s ease-in-out .2s;
+  opacity: 1;
 }
