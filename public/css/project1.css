@@ -1,0 +1,65 @@
+#project1{
+  padding: 100px 15px;
+}
+#project1 .project-image{
+  width:100%;
+  margin-bottom: 3rem;
+}
+#project1 .project-image .img{
+  width:100%;
+  height:450px;
+  background-size: cover !important;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+  background-attachment: fixed !important;
+}
+#project1 h1{
+  font-size: 4rem;
+  font-weight: 600;
+  font-style: italic;
+  margin-bottom: 1.5rem;
+}
+#project1 .info .buttons{
+  padding:20px 0;
+}
+#project1 .info .buttons a{
+  display: inline-block;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 3px;
+  color:white;
+  background: black;
+  text-transform: capitalize;
+}
+#project1 .info .buttons a:hover{
+  color: #52b7ff;
+}
+#project1 p{
+  display: inline-block;
+  color:#929294;
+  font-size: 1.2rem;
+  line-height: 1.7;
+  text-transform: capitalize;
+  margin-bottom: 1.5rem;
+}
+#project1 .technologies{
+
+}
+#project1 .technologies h3{
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 2rem;
+}
+#project1 .technologies .icons{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* 3 because of images in the section */
+  align-items: center;
+  justify-items:center;
+  grid-gap: 20px;
+}
+#project1 .technologies .icons .icon img{
+  width: 100%;
+  max-width: 100px;
+}
